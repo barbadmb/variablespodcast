@@ -9,11 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     >
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Updated favicon link -->
     <style>
       body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background: linear-gradient(45deg, #3498db, #2ecc71); /* Blue to Green gradient */
+        background: linear-gradient(45deg, #3498db, #2ecc71);
         margin: 0;
         padding: 0;
       }
@@ -39,8 +40,7 @@
       }
       .button-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(auto, auto);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         justify-content: center;
         margin-top: 20px;
@@ -89,12 +89,11 @@
       }
 
       @media screen and (max-width: 600px) {
-        /* Adjust styles for screens with a maximum width of 600px (typical for mobile devices) */
         .button-container {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
         }
         .button {
-          padding: 15px; /* Slightly smaller padding for smaller screens */
+          padding: 15px;
         }
       }
     </style>
@@ -135,12 +134,6 @@
           href="https://t.me/Variablespodcast"
           target="_blank"
           ><i class="fa fa-telegram"></i> Telegram</a
-        >
-        <a
-          class="button instagram-button"
-          href="https://instagram.com/Varibles_podcast"
-          target="_blank"
-          ><i class="fa fa-instagram"></i> Instagram</a
         >
         <a
           class="button twitter-button"
