@@ -39,7 +39,8 @@
       }
       .button-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Change to a single column on small screens */
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(auto, auto);
         gap: 20px;
         justify-content: center;
         margin-top: 20px;
@@ -84,14 +85,13 @@
       }
       .twitter-button {
         background: linear-gradient(45deg, #1da1f2, #1da1f2);
-        margin-top: 20px;
         padding: 20px;
       }
 
       @media screen and (max-width: 600px) {
         /* Adjust styles for screens with a maximum width of 600px (typical for mobile devices) */
         .button-container {
-          grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(2, 1fr);
         }
         .button {
           padding: 15px; /* Slightly smaller padding for smaller screens */
@@ -114,7 +114,7 @@
         >
         <a
           class="button google-podcast-button"
-          href="https://podcasts.google.com/feed/aHR0cDovL3Jzcy5jYXN0Ym94LmZtL2V2ZXJlc3QvMDE2YjlmMGYwMDI5NDc4YjllNDlmYWNhZDBmYTMxMzUueG1s"
+          href="https://podcasts.google.com/feed/aHR0cDovL3Jzcy5jYXN0Ym94LmZtL2V2ZXJlc3QvMDE2YjfmMGYwMDI5NDc4YjllNDlmYAWNhZDBmYTMxMzUueG1s?sa=X&ved=2ahUKEwi2i-rfu6WBAxXngf0HHQcrBfwQ9sEGegQIARAC"
           target="_blank"
           ><i class="fa fa-google"></i> Google Podcast</a
         >
@@ -142,8 +142,6 @@
           target="_blank"
           ><i class="fa fa-instagram"></i> Instagram</a
         >
-      </div>
-      <div class="twitter-container">
         <a
           class="button twitter-button"
           href="https://twitter.com/Variables_x"
